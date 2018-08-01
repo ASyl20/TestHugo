@@ -1,0 +1,8 @@
+{{ partial "header" .}}
+
+{{ range .Pages  }}
+        <ul>
+            <li><a href="{{.URL}}">{{.Title}}</a></li>
+        </ul>
+{{ end }}
+{{ partial "footer" .}}
